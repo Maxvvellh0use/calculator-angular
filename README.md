@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## [Deploy](https://maxvvellh0use-calculator-angular.netlify.app)
 
-### ![image](./src/app/assets/img/screen-app.png)
+### ![image](./src/assets/img/screen-app.png)
 
 ## Development server
 
