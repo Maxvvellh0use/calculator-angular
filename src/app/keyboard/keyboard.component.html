@@ -1,0 +1,33 @@
+<div class="buttons_container">
+  <div class="operators_container">
+    <div (click)="calc()" class="item">=</div>
+    <div (click)="typingOperator($event.target)" data-value="-" class="item">-</div>
+    <div (click)="typingOperator($event.target)" data-value="×" class="item">×</div>
+    <div (click)="typingOperator($event.target)" data-value="÷" class="item">÷</div>
+  </div>
+  <div class="numbers_and_equal_sign">
+    <div class="numbers_container">
+      <div class="numbers_items">
+        <div (click)="typingNumber($event.target)" data-value="7" class="item">7</div>
+        <div (click)="typingNumber($event.target)" data-value="8" class="item">8</div>
+        <div (click)="typingNumber($event.target)" data-value="9" class="item">9</div>
+      </div>
+      <div class="numbers_items">
+        <div (click)="typingNumber($event.target)" data-value="4" class="item">4</div>
+        <div (click)="typingNumber($event.target)" data-value="5" class="item">5</div>
+        <div (click)="typingNumber($event.target)" data-value="6" class="item">6</div>
+      </div>
+      <div class="numbers_items">
+        <div (click)="typingNumber($event.target)" data-value="1" class="item">1</div>
+        <div (click)="typingNumber($event.target)" data-value="2" class="item">2</div>
+        <div (click)="typingNumber($event.target)" data-value="3" class="item">3</div>
+      </div>
+      <div class="numbers_items">
+        <div (click)="typingNumber($event.target)" data-value="0" class="item">0</div>
+        <div (click)="typingNumber($event.target)" data-value="." class="item">.</div>
+        <div (click)="reset()" class="item">AC</div>
+      </div>
+    </div>
+    <div (click)="typingOperator($event.target)" data-value="+" class="item equal_sign">+</div>
+  </div>
+</div>
