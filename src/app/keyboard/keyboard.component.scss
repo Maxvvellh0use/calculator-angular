@@ -1,5 +1,6 @@
 .buttons_container {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   height: 100%;
   transition: all 0.5s ease-out;
@@ -7,13 +8,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
     width: 50px;
     height: 50px;
     border: 1px solid black;
+    border-radius: 5px;
     margin: 5px;
     cursor: pointer;
+    transition: all ease-in-out .1s;
     &:hover {
-      outline: 1px solid #B8B8B8;
+      transform: scale(1.09);
     }
   }
 
@@ -29,10 +33,12 @@
 
   .numbers_and_equal_sign {
     display: flex;
+    justify-content: center;
   }
 
   .operators_container {
     display: flex;
+    justify-content: center;
   }
 
   .numbers_container {
@@ -45,6 +51,17 @@
   .numbers_items {
     display: flex;
     flex-direction: row;
+  }
+
+  .item_operator {
+    background: #E8E8E8;
+  }
+
+  .item_plus {
+    background: #F78764;
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 }
 

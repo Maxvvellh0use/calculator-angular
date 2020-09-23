@@ -1,10 +1,10 @@
 <div class="buttons_container">
   <div class="operators_container">
-    <div (click)="calc()" class="item">=</div>
+    <div (click)="calc()" class="item item_operator">=</div>
     <div *ngFor="let operator of operators"
       (click)="typingOperator($event.target)"
          attr.data-value="{{ operator }}"
-         class="item">{{ operator }}</div>
+         class="item item_operator">{{ operator }}</div>
   </div>
   <div class="numbers_and_equal_sign">
     <div class="numbers_container">
@@ -16,6 +16,6 @@
     </div>
     <div (click)="typingOperator($event.target)"
          data-value="+"
-         class="item equal_sign">+</div>
+         class="item equal_sign item_plus">+</div>
   </div>
 </div>
