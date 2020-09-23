@@ -17,6 +17,11 @@
     }
   }
 
+  .item_number {
+    flex-direction: row;
+    flex-basis: 50px;
+  }
+
   .equal_sign {
     height: 236px;
     margin-bottom: 5px;
@@ -31,8 +36,10 @@
   }
 
   .numbers_container {
+    width: 71.7%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .numbers_items {

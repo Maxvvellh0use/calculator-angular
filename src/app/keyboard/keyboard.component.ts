@@ -6,7 +6,15 @@ import { typingNumber, reset, typingOperator } from './keyboard.action';
 import { selectInputValue } from './keyboard.selectors';
 import {InputValueState} from './keyboard.reducer';
 import {calculate} from './helpers/calculate';
-import {maxNumberQuantity , maxOperatorQuantity , num1Index , num2Index , operatorIndex} from './consts';
+import {
+  maxNumberQuantity ,
+  maxOperatorQuantity ,
+  num1Index ,
+  num2Index ,
+  numbers ,
+  operatorIndex ,
+  operators
+} from './consts';
 
 @Component({
   selector: 'app-keyboard',
@@ -14,12 +22,12 @@ import {maxNumberQuantity , maxOperatorQuantity , num1Index , num2Index , operat
   styleUrls: ['./keyboard.component.scss']
 })
 
-
-
 export class KeyboardComponent {
   public inputValue$: Observable<string>;
   public inputValue = '';
   public totalCalc: number;
+  public numbers: string[] = numbers;
+  public operators: string[] = operators;
 
   constructor(private store: Store<InputValueState>) {
     this.inputValue$ = store.pipe(select(selectInputValue));

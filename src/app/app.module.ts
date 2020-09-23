@@ -8,6 +8,7 @@ import { keyboardReducer } from './keyboard/keyboard.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { EffectsModule } from '@ngrx/effects';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { EffectsModule } from '@ngrx/effects';
     KeyboardComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, CommonModule,
     StoreModule.forRoot({ inputValue: keyboardReducer }),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     EffectsModule.forRoot([])
