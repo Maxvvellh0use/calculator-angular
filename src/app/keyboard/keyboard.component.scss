@@ -1,0 +1,67 @@
+.buttons_container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.5s ease-out;
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all ease-in-out .1s;
+    &:hover {
+      transform: scale(1.09);
+    }
+  }
+
+  .item_number {
+    flex-direction: row;
+    flex-basis: 50px;
+  }
+
+  .equal_sign {
+    height: 236px;
+    margin-bottom: 5px;
+  }
+
+  .numbers_and_equal_sign {
+    display: flex;
+    justify-content: center;
+  }
+
+  .operators_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .numbers_container {
+    width: 71.7%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .numbers_items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item_operator {
+    background: #E8E8E8;
+  }
+
+  .item_plus {
+    background: #F78764;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
+
